@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr Daniel Shmukler - Consultant Anaesthetist</title>
+  <meta name="description" content="Personalised, evidence-based anaesthesia care focused on safety, clarity and comfort—before, during and after your procedure. Practising in Johannesburg, South Africa.">
+
+  <!-- Canonical & indexing -->
+  <link rel="canonical" href="https://drdanielshmukler.co.za/">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <meta name="robots" content="index,follow">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Dr Daniel Shmukler - Consultant Anaesthetist">
+  <meta property="og:description" content="Calm, safe anaesthesia care in Johannesburg, South Africa.">
+  <meta property="og:url" content="https://drdanielshmukler.co.za/">
+  <meta property="og:site_name" content="Dr Daniel Shmukler">
+  <meta property="og:image" content="https://drdanielshmukler.co.za/public/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr Daniel Shmukler - Consultant Anaesthetist">
+  <meta name="twitter:description" content="Personalised, evidence-based anaesthesia care in Johannesburg.">
+  <meta name="twitter:image" content="https://drdanielshmukler.co.za/public/og-image.jpg">
+
+  <!-- Favicons (placeholders) -->
+  <link rel="icon" href="/public/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Minimal custom CSS (no @apply) -->
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    /* mobile menu + section visibility */
+    .mobile-menu{display:none}.mobile-menu.show{display:block}
+    .page-section{display:none}.page-section.active{display:block}
+    .faq-answer{display:none}.faq-answer.show{display:block}
+    /* tiny brain pulse */
+    @keyframes pulse-brain {0%,100%{opacity:.3}50%{opacity:.6}}
+    .brain-pulse{animation:pulse-brain 3s ease-in-out infinite}
+  </style>
+
+  <!-- Physician Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr Daniel Shmukler",
+    "jobTitle": "Consultant Anaesthetist",
+    "medicalSpecialty": ["Anesthesiology","Neuroanesthesiology"],
+    "areaServed": "Johannesburg, South Africa",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Johannesburg",
+      "addressCountry": "ZA"
+    },
+    "url": "https://drdanielshmukler.co.za/",
+    "availableService": [
+      { "@type": "MedicalTherapy", "name": "General anaesthesia" },
+      { "@type": "MedicalTherapy", "name": "Regional anaesthesia & nerve blocks" },
+      { "@type": "MedicalTherapy", "name": "Sedation" },
+      { "@type": "MedicalTherapy", "name": "Post-operative pain management" }
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "Patient enquiries",
+      "telephone": "+27-11-555-1234",
+      "areaServed": "ZA",
+      "availableLanguage": ["en","af"]
+    }],
+    "sameAs": [
+      "https://www.facebook.com/Gr8Sleep",
+      "https://x.com/drshmuk"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <!-- Skip Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-6 focus:left-6 bg-blue-600 text-white px-4 py-2 rounded-md z-50">
+    Skip to main content
+  </a>
+
+  <!-- Navigation -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4" role="navigation" aria-label="Primary">
+      <div class="flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-2 cursor-pointer" onclick="showPage('home')" data-nav>
+          <!-- Brain Icon -->
+          <svg class="h-8 w-8 text-blue-600" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M25 35C25 25 35 15 50 15C65 15 75 25 75 35C75 30 80 25 85 30C90 35 85 45 80 50C85 55 85 65 80 70C75 75 70 70 65 75C60 80 55 75 50 75C45 75 40 80 35 75C30 70 25 65 30 60C25 55 20 45 25 40C20 35 25 30 25 35Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="brain-pulse"/>
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-lg font-semibold text-gray-900">Dr Daniel Shmukler</span>
+            <span class="text-sm text-gray-600">Consultant Anaesthetist</span>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:flex lg:items-center lg:space-x-8">
+          <a href="#" class="nav-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-2 py-1 rounded-md" onclick="showPage('home')">Home</a>
+          <a href="#" class="nav-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-2 py-1 rounded-md" onclick="showPage('about')">About</a>
+          <a href="#" class="nav-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-2 py-1 rounded-md" onclick="showPage('services')">Services</a>
+          <a href="#" class="nav-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-2 py-1 rounded-md" onclick="showPage('patients')">Patient Info</a>
+          <a href="#" class="nav-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-2 py-1 rounded-md" onclick="showPage('education')">Education</a>
+          <a href="#" class="nav-link text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors px-2 py-1 rounded-md" onclick="showPage('contact')">Contact</a>
+        </div>
+
+        
+
+        <!-- Mobile menu button -->
+        <button type="button" class="lg:hidden" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+          <svg class="h-6 w-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="mobile-menu lg:hidden mt-4 space-y-1 pb-3 pt-2 border-t border-gray-200">
+        <a href="#" class="nav-link-mobile block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md" onclick="showPage('home')">Home</a>
+        <a href="#" class="nav-link-mobile block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md" onclick="showPage('about')">About</a>
+        <a href="#" class="nav-link-mobile block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md" onclick="showPage('services')">Services</a>
+        <a href="#" class="nav-link-mobile block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md" onclick="showPage('patients')">Patient Info</a>
+        <a href="#" class="nav-link-mobile block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md" onclick="showPage('education')">Education</a>
+        <a href="#" class="nav-link-mobile block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md" onclick="showPage('contact')">Contact</a>
+        <div class="px-3 py-2">
+          <a href="#" onclick="showPage('contact')"
+             class="w-full text-center block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
+            Contact Dr Shmukler
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- HOME PAGE -->
+    <div id="home-page" class="page-section active">
+      <!-- Hero Section -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-br from-white to-blue-50">
+        <!-- Background Brain Graphic -->
+        <div class="absolute top-0 right-0 opacity-10">
+          <svg class="w-96 h-96" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <circle cx="20" cy="20" r="2" fill="currentColor" opacity="0.3" />
+            <circle cx="50" cy="15" r="2" fill="currentColor" opacity="0.4" />
+            <circle cx="80" cy="25" r="2" fill="currentColor" opacity="0.3" />
+            <circle cx="15" cy="50" r="2" fill="currentColor" opacity="0.4" />
+            <circle cx="50" cy="45" r="3" fill="currentColor" opacity="0.5" />
+            <circle cx="85" cy="55" r="2" fill="currentColor" opacity="0.3" />
+            <circle cx="25" cy="80" r="2" fill="currentColor" opacity="0.4" />
+            <circle cx="65" cy="75" r="2" fill="currentColor" opacity="0.3" />
+            <path d="M20 20 L50 15 L80 25 M15 50 L50 45 L85 55 M25 80 L50 45 L65 75" stroke="currentColor" stroke-width="0.5" opacity="0.2" class="brain-pulse"/>
+          </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+              <div class="space-y-2">
+                <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+                  Dr Daniel Shmukler
+                </h1>
+                <p class="text-xl text-blue-600 font-medium">
+                  Consultant Anaesthetist
+                </p>
+              </div>
+
+              <p class="text-lg text-gray-600 leading-relaxed max-w-xl">
+                Personalised, evidence-based anaesthesia care focused on safety, clarity and comfort—before, during and after your procedure.
+              </p>
+
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#" onclick="showPage('contact')"
+                   class="inline-flex items-center justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
+                  Contact Dr Shmukler
+                  <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </a>
+                <a href="#" onclick="showPage('patients')"
+                   class="inline-flex items-center justify-center border border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-600 hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2">
+                  Patient Information
+                </a>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center overflow-hidden">
+                <!-- Dr Daniel Shmukler Headshot -->
+                <img src="Photos/Headshot.webp" alt="Dr Daniel Shmukler - Consultant Anaesthetist" class="w-full h-full object-cover rounded-2xl">
+              </div>
+              <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-white rounded-full shadow-lg flex items-center justify-center">
+                <svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Benefits Cards -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+              Comprehensive Anaesthesia Care
+            </h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              From initial consultation through to complete recovery, every step of your journey is carefully managed with your comfort and safety as the priority.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Pre-op Care -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Pre-op Care</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Comprehensive pre-operative assessment and preparation to ensure you're ready for surgery with confidence and peace of mind.
+              </p>
+            </div>
+
+            <!-- In Theatre -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">In Theatre</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Advanced monitoring and personalised anaesthetic management throughout your procedure, prioritising safety and comfort.
+              </p>
+            </div>
+
+            <!-- Post-op Recovery -->
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-3">Post-op Recovery</h3>
+              <p class="text-gray-600 leading-relaxed">
+                Dedicated post-operative care and pain management to support your comfortable recovery and return to normal activities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Trust Strip -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+            <div class="text-center lg:text-left">
+              <h3 class="text-xl font-semibold text-gray-900 mb-2">Trusted Healthcare Professional</h3>
+              <p class="text-gray-600">Registered and practicing in Johannesburg, South Africa</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-6 lg:col-span-2">
+              <div class="flex items-center justify-center lg:justify-start space-x-3">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">Registered with HPCSA</span>
+              </div>
+
+              <div class="flex items-center justify-center lg:justify-start space-x-3">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">Special interest: Neuro-anaesthesia</span>
+              </div>
+
+              <div class="flex items-center justify-center lg:justify-start space-x-3">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">Practising in Johannesburg</span>
+              </div>
+
+              <div class="flex items-center justify-center lg:justify-start space-x-3">
+                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                </svg>
+                <span class="text-sm font-medium text-gray-700">SASA Member</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="about-page" class="page-section">
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-blue-50 relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 opacity-5">
+          <svg class="w-64 h-64" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M25 35C25 25 35 15 50 15C65 15 75 25 75 35C75 30 80 25 85 30C90 35 85 45 80 50C85 55 85 65 80 70C75 75 70 70 65 75C60 80 55 75 50 75C45 75 40 80 35 75C30 70 25 65 30 60C25 55 20 45 25 40C20 35 25 30 25 35Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+              <h1 class="text-4xl lg:text-5xl font-bold text-gray-900">About Dr Daniel Shmukler</h1>
+              <p class="text-xl text-gray-600 leading-relaxed">
+                A dedicated consultant anaesthetist with a special interest in neuro-anaesthesia,
+                committed to providing personalised, evidence-based care in Johannesburg.
+              </p>
+            </div>
+
+                         <div class="relative">
+               <div class="aspect-square bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl overflow-hidden">
+                 <!-- Dr Daniel Shmukler Professional Portrait -->
+                 <img src="Photos/ProfPhoto.png" alt="Dr Daniel Shmukler - Professional Portrait" class="w-full h-full object-cover rounded-2xl">
+               </div>
+             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Biography Section -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Professional Background</h2>
+
+          <div class="prose prose-lg mx-auto text-gray-600 space-y-6">
+            <p>
+              Dr Daniel Shmukler is a highly experienced consultant anaesthetist practicing in
+              Johannesburg, South Africa. With over 15 years of clinical experience, he has developed
+              a reputation for excellence in perioperative care, particularly in the field of
+              neuro-anaesthesia for brain and spinal surgery.
+            </p>
+
+            <p>
+              After completing his medical degree at the University of the Witwatersrand,
+              Dr Shmukler pursued specialised training in anaesthetics, earning his Fellowship
+              of the College of Anaesthetists. His commitment to continuous learning has led him
+              to develop particular expertise in neuro-anaesthesia, regional anaesthesia, and
+              advanced monitoring techniques.
+            </p>
+
+            <p>
+              Dr Shmukler's approach to patient care is centred on clear communication,
+              evidence-based practice, and individualised treatment plans. He believes that
+              understanding your anaesthetic care reduces anxiety and improves outcomes,
+              which is why he takes time to explain procedures and answer questions thoroughly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Credentials -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Qualifications & Affiliations</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Maintaining the highest professional standards through continuous education and
+              active participation in professional medical organisations.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Medical Education</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>MBChB - University of the Witwatersrand</li>
+                <li>DA(SA) - Diploma in Anaesthetics</li>
+                <li>FCA(SA) - Fellowship of the College of Anaesthetists</li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Hospital Affiliations</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>Milpark Private Hospital</li>
+                <li>Morningside Clinic</li>
+                <li>Johannesburg General Hospital</li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow text-center">
+              <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold text-gray-900 mb-4">Professional Memberships</h3>
+              <ul class="text-gray-600 space-y-2 text-sm">
+                <li>Health Professions Council of South Africa (HPCSA)</li>
+                <li>South African Society of Anaesthesiologists (SASA)</li>
+                <li>International Association for the Study of Pain</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- SERVICES PAGE -->
+    <div id="services-page" class="page-section">
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-blue-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10">
+          <svg class="w-96 h-96" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M10 30 Q25 20 40 30 T70 30 T90 30" stroke="currentColor" stroke-width="1" opacity="0.3" class="brain-pulse"/>
+            <path d="M15 45 Q30 35 45 45 T75 45 T90 45" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+            <path d="M10 60 Q25 50 40 60 T70 60 T85 60" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+          </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Anaesthetic Services</h1>
+          <p class="text-xl text-gray-600 leading-relaxed">
+            Comprehensive anaesthetic care tailored to your specific needs, from routine procedures
+            to complex neurosurgical operations. Every service is delivered with the highest
+            standards of safety and patient comfort.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Grid -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto space-y-16">
+          <!-- General Anaesthesia -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                  </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">General Anaesthesia</h2>
+              </div>
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Complete unconsciousness for major surgical procedures with comprehensive monitoring and safety protocols.
+              </p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow space-y-4">
+                <div class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-gray-900">Suitable For</h3>
+                </div>
+                <ul class="space-y-2">
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Major abdominal, thoracic, or orthopaedic surgery</span>
+                  </li>
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Procedures requiring muscle relaxation</span>
+                  </li>
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Operations lasting longer than 2 hours</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regional & Nerve Blocks -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6 lg:order-2">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                  </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">Regional & Nerve Blocks</h2>
+              </div>
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Targeted anaesthesia using local anaesthetic injection to block specific nerves, providing excellent pain relief.
+              </p>
+            </div>
+
+            <div class="space-y-6 lg:order-1">
+              <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow space-y-4">
+                <div class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-gray-900">Suitable For</h3>
+                </div>
+                <ul class="space-y-2">
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Limb surgery (arms, legs, hands, feet)</span>
+                  </li>
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Shoulder, knee, and hip procedures</span>
+                  </li>
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Post-operative pain management</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neuro-anaesthesia -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div class="space-y-6">
+              <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                  </svg>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-900">Neuro-anaesthesia</h2>
+              </div>
+              <p class="text-lg text-gray-600 leading-relaxed">
+                Specialised anaesthetic management for brain and spinal surgery with advanced monitoring and techniques.
+              </p>
+            </div>
+
+            <div class="space-y-6">
+              <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow space-y-4">
+                <div class="flex items-center space-x-2">
+                  <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <h3 class="text-lg font-semibold text-gray-900">Suitable For</h3>
+                </div>
+                <ul class="space-y-2">
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Brain tumour removal and craniotomies</span>
+                  </li>
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Spinal fusion and complex spinal surgery</span>
+                  </li>
+                  <li class="text-gray-600 text-sm flex items-start space-x-2">
+                    <span class="w-1.5 h-1.5 bg-blue-600 rounded-full mt-2 flex-shrink-0"></span>
+                    <span>Awake craniotomy procedures</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- PATIENTS PAGE -->
+    <div id="patients-page" class="page-section">
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-blue-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10">
+          <svg class="w-96 h-96" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M25 35C25 25 35 15 50 15C65 15 75 25 75 35C75 30 80 25 85 30C90 35 85 45 80 50C85 55 85 65 80 70C75 75 70 70 65 75C60 80 55 75 50 75C45 75 40 80 35 75C30 70 25 65 30 60C25 55 20 45 25 40C20 35 25 30 25 35Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Patient Information</h1>
+          <p class="text-xl text-gray-600 leading-relaxed">
+            Everything you need to know to prepare for your procedure and ensure a smooth recovery.
+            Please read through these guidelines carefully and don't hesitate to ask questions.
+          </p>
+        </div>
+      </section>
+
+      <!-- Pre-operative Checklist -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <div class="flex items-center space-x-3 mb-6">
+                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h2 class="text-3xl font-bold text-gray-900">Pre-operative Preparation</h2>
+              </div>
+              <p class="text-lg text-gray-600 mb-8">
+                Following these instructions carefully helps ensure your safety and the success of your procedure.
+              </p>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <h3 class="text-xl font-semibold text-gray-900 mb-6">Pre-operative Checklist</h3>
+              <div class="space-y-4">
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span class="text-xs font-medium">1</span>
+                  </div>
+                  <p class="text-gray-700 text-sm">Fast from food for 6 hours before surgery (clear fluids up to 2 hours before)</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span class="text-xs font-medium">2</span>
+                  </div>
+                  <p class="text-gray-700 text-sm">Take regular medications with small sips of water unless instructed otherwise</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span class="text-xs font-medium">3</span>
+                  </div>
+                  <p class="text-gray-700 text-sm">Arrange reliable transport home (no driving for 24 hours after anaesthetic)</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span class="text-xs font-medium">4</span>
+                  </div>
+                  <p class="text-gray-700 text-sm">Remove all jewellery, contact lenses, and nail polish</p>
+                </div>
+                <div class="flex items-start space-x-3">
+                  <div class="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <span class="text-xs font-medium">5</span>
+                  </div>
+                  <p class="text-gray-700 text-sm">Bring a list of all current medications and allergies</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQs -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div class="max-w-4xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+              Common questions about anaesthesia and what to expect during your care.
+            </p>
+          </div>
+
+          <div class="space-y-4">
+            <div class="bg-white rounded-lg shadow-sm border border-gray-100">
+              <button class="w-full p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleFAQ(1)">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-medium text-gray-900">How long before surgery should I stop eating and drinking?</h3>
+                  <svg class="w-5 h-5 text-gray-400" id="faq-icon-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                </div>
+              </button>
+              <div id="faq-answer-1" class="faq-answer px-6 pb-6">
+                <p class="text-gray-600">Stop eating solid foods 6 hours before surgery. You may have clear fluids (water, black tea, black coffee) up to 2 hours before surgery. This includes no milk, cream, or chewing gum.</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm border border-gray-100">
+              <button class="w-full p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleFAQ(2)">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-medium text-gray-900">Will I feel anything during the operation?</h3>
+                  <svg class="w-5 h-5 text-gray-400" id="faq-icon-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                </div>
+              </button>
+              <div id="faq-answer-2" class="faq-answer px-6 pb-6">
+                <p class="text-gray-600">With general anaesthesia, you will be completely unconscious and feel nothing. With regional anaesthesia, the surgical area will be completely numb. We monitor your comfort throughout and can provide additional medication if needed.</p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg shadow-sm border border-gray-100">
+              <button class="w-full p-6 text-left hover:bg-gray-50 transition-colors" onclick="toggleFAQ(3)">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-medium text-gray-900">How long will it take to wake up after general anaesthesia?</h3>
+                  <svg class="w-5 h-5 text-gray-400" id="faq-icon-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                  </svg>
+                </div>
+              </button>
+              <div id="faq-answer-3" class="faq-answer px-6 pb-6">
+                <p class="text-gray-600">Most people wake up within 5–10 minutes of the surgery ending. However, you may feel drowsy for several hours. Full alertness typically returns within 2–4 hours, but everyone recovers at their own pace.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- EDUCATION PAGE -->
+    <div id="education-page" class="page-section">
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-blue-50 relative overflow-hidden">
+        <div class="absolute top-0 right-0 opacity-10">
+          <svg class="w-96 h-96" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M10 30 Q25 20 40 30 T70 30 T90 30" stroke="currentColor" stroke-width="1" opacity="0.3" class="brain-pulse"/>
+            <path d="M15 45 Q30 35 45 45 T75 45 T90 45" stroke="currentColor" stroke-width="1" opacity="0.4"/>
+            <path d="M10 60 Q25 50 40 60 T70 60 T85 60" stroke="currentColor" stroke-width="1" opacity="0.2"/>
+          </svg>
+        </div>
+
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Education & Resources</h1>
+          <p class="text-xl text-gray-600 leading-relaxed">
+            Understanding your anaesthetic care helps reduce anxiety and ensures you feel
+            confident about your upcoming procedure. Explore our educational articles
+            written in plain language.
+          </p>
+        </div>
+      </section>
+
+      <!-- Featured Articles -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Articles</h2>
+            <p class="text-lg text-gray-600">Essential reading for understanding anaesthesia and what to expect.</p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="group bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">General Information</span>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    5 min read
+                  </div>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">What Does an Anaesthetist Do?</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Understanding the role of an anaesthetist in your surgical journey, from pre-operative assessment to post-operative care and pain management.
+                </p>
+              </div>
+            </div>
+
+            <div class="group bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Types of Anaesthesia</span>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    4 min read
+                  </div>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">Understanding Sedation vs General Anaesthesia</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  Learn the differences between various types of anaesthesia and sedation, helping you understand what to expect during different procedures.
+                </p>
+              </div>
+            </div>
+
+            <div class="group bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+              <div class="space-y-4">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-1 rounded">Neuro-anaesthesia</span>
+                  <div class="flex items-center text-xs text-gray-500">
+                    <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    6 min read
+                  </div>
+                </div>
+                <h3 class="text-xl font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">How We Monitor the Brain Under Anaesthesia</h3>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                  An accessible explanation of brain monitoring techniques including EEG and depth of anaesthesia monitoring for patient safety.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- CONTACT PAGE -->
+    <div id="contact-page" class="page-section">
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+        <div class="max-w-7xl mx-auto">
+          <div class="text-center">
+            <h1 class="text-4xl lg:text-5xl font-bold mb-4">Contact Dr Shmukler</h1>
+            <p class="text-xl mb-8 text-blue-100 max-w-2xl mx-auto">
+              Ready to discuss your anaesthetic care? Get in touch to schedule a consultation
+              or ask any questions about your upcoming procedure.
+            </p>
+
+            <!-- Contact Information -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div class="text-center">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                </div>
+                <h3 class="font-semibold mb-1">Phone</h3>
+                <p class="text-blue-100">+27 11 555 1234</p>
+              </div>
+
+              <div class="text-center">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </div>
+                <h3 class="font-semibold mb-1">Email</h3>
+                <p class="text-blue-100">info@drdanielshmukler.co.za</p>
+              </div>
+
+              <div class="text-center">
+                <div class="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  </svg>
+                </div>
+                <h3 class="font-semibold mb-1">Location</h3>
+                <p class="text-blue-100">Johannesburg, South Africa</p>
+              </div>
+            </div>
+
+           
+          </div>
+        </div>
+      </section>
+
+      <!-- Office Hours -->
+      <section class="py-16 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8">Office Hours</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <h3 class="font-semibold text-gray-900 mb-2">Monday - Friday</h3>
+              <p class="text-gray-600">8:00 AM - 5:00 PM</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <h3 class="font-semibold text-gray-900 mb-2">Saturday</h3>
+              <p class="text-gray-600">9:00 AM - 1:00 PM</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+              <h3 class="font-semibold text-gray-900 mb-2">Sunday</h3>
+              <p class="text-gray-600">Closed</p>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500 mt-6">Emergency consultations available by arrangement</p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-gray-200">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <div class="flex items-center justify-center space-x-2 mb-4 cursor-pointer" onclick="showPage('home')" data-nav>
+          <svg class="h-8 w-8 text-blue-600" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+            <path d="M25 35C25 25 35 15 50 15C65 15 75 25 75 35C75 30 80 25 85 30C90 35 85 45 80 50C85 55 85 65 80 70C75 75 70 70 65 75C60 80 55 75 50 75C45 75 40 80 35 75C30 70 25 65 30 60C25 55 20 45 25 40C20 35 25 30 25 35Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="flex flex-col">
+            <span class="text-lg font-semibold text-gray-900">Dr Daniel Shmukler</span>
+            <span class="text-sm text-gray-600">Consultant Anaesthetist</span>
+          </div>
+        </div>
+
+        <p class="text-gray-600 text-sm mb-4 max-w-2xl mx-auto">
+          Personalised, evidence-based anaesthesia care focused on safety, clarity and comfort.
+        </p>
+
+        <div class="flex items-center justify-center space-x-6 text-sm text-gray-500 mb-6">
+          <span>Registered with HPCSA</span>
+          <span>•</span>
+          <span>Specialising in Neuro-anaesthesia</span>
+          <span>•</span>
+          <span>SASA Member</span>
+        </div>
+
+        <div class="border-top border-gray-200 pt-6">
+          <div class="text-sm text-gray-500">
+            <p class="mb-1">© 2024 Dr Daniel Shmukler. All rights reserved.</p>
+            <p class="text-xs">
+              This website is for informational purposes only and does not constitute medical advice.
+              Always consult with a qualified healthcare professional.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How long before surgery should I stop eating and drinking?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Stop eating solid foods 6 hours before surgery. Clear fluids are allowed up to 2 hours before. No milk or chewing gum."
+      }
+    },{
+      "@type": "Question",
+      "name": "Will I feel anything during the operation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With general anaesthesia you are unconscious and feel nothing. With regional anaesthesia the surgical area is numb; comfort is monitored continuously."
+      }
+    },{
+      "@type": "Question",
+      "name": "How long will it take to wake up after general anaesthesia?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most people wake within 5–10 minutes after surgery, though drowsiness can last several hours."
+      }
+    }]
+  }
+  </script>
+
+  <!-- No‑JS fallback for page sections -->
+  <noscript><style>.page-section{display:block!important}</style></noscript>
+
+  <!-- JavaScript -->
+  <script>
+    // Current active page
+    let currentPage = 'home';
+
+    function showPage(pageId) {
+      // Hide all pages
+      document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active'));
+      // Show selected page
+      document.getElementById(pageId + '-page').classList.add('active');
+
+      // Update navigation active states (desktop + mobile)
+      updateNavigation(pageId);
+
+      // Close mobile menu
+      const mm = document.getElementById('mobile-menu');
+      if (mm) mm.classList.remove('show');
+
+      // Scroll to top
+      window.scrollTo(0, 0);
+      currentPage = pageId;
+    }
+
+    function updateNavigation(activePageId) {
+      // remove active classes & aria-current
+      document.querySelectorAll('.nav-link, .nav-link-mobile, [data-nav]').forEach(link => {
+        link.classList.remove('text-blue-600','border-b-2','border-blue-600','bg-blue-50');
+        link.removeAttribute('aria-current');
+      });
+
+      // add active classes to all elements that navigate to this page
+      document.querySelectorAll(`[onclick="showPage('${activePageId}')"]`).forEach(link => {
+        if (link.classList.contains('nav-link')) {
+          link.classList.add('text-blue-600','border-b-2','border-blue-600');
+          link.setAttribute('aria-current','page');
+        }
+        if (link.classList.contains('nav-link-mobile')) {
+          link.classList.add('text-blue-600','bg-blue-50');
+          link.setAttribute('aria-current','page');
+        }
+      });
+    }
+
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('show');
+    }
+
+    function toggleFAQ(n) {
+      const answer = document.getElementById('faq-answer-' + n);
+      const icon = document.getElementById('faq-icon-' + n);
+      answer.classList.toggle('show');
+      icon.innerHTML = answer.classList.contains('show')
+        ? '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6"></path>'
+        : '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>';
+    }
+
+    // Prevent default for hash links
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('a[href="#"]').forEach(link => {
+        link.addEventListener('click', e => e.preventDefault());
+      });
+      // mark home as current initially
+      updateNavigation('home');
+    });
+  </script>
+</body>
+</html>
